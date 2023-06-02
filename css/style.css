@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/bmwm5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.hiddin {
+  display: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+  background: green;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+  width: 100%;
+  height: 180px;
+  background: white;
+  border-radius: 5px;
+  padding: 8px 15px;
+  z-index: 5;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.modal-header h3 {
+  font-size: 18px;
+}
+
+.close_btn {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-body h2 {
+  padding: 10px 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
